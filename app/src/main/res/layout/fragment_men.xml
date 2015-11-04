@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#289FA5"/>
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#289FA5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular products"
+            android:textSize="23sp"
+            android:padding="7dp"/>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:id="@+id/pop_pro_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#289FA5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catagories"
+            android:textSize="23sp"
+            android:padding="7dp"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/cata_men"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

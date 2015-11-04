@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/grid_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/discount_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:background="#f12030"
+        android:padding="2dip"
+        android:text="-50%"
+        android:layout_margin="5dp"
+        android:textColor="#ffffffff" />
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_imageview"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Shoe Mate Black formal (sm-291) Lace Up shoes"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/product_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rs"
+            android:textSize="20sp"
+            android:textColor="#f12030"/>
+        <TextView
+            android:id="@+id/discounted_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="499"
+            android:textColor="#f12030"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rs"
+            android:textSize="15sp"
+            android:background="@drawable/bg_strikethrough"/>
+        <TextView
+            android:id="@+id/actual_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999"
+            android:textSize="15sp"
+            android:background="@drawable/bg_strikethrough"/>
+    </LinearLayout>
+
+</RelativeLayout>

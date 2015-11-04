@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_list"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_gravity="left"
+        android:id="@+id/imageView1"
+        android:layout_height="130dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="120dp"
+        android:src="@drawable/men_clothing_catagory"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_height="130dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/catagory_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Men"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/catagory_desc"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clothing, Shoes, Bags, Watches"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
